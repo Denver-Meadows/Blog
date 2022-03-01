@@ -1,0 +1,32 @@
+// Navbar
+.nav {
+  font-size: 2rem;
+  background-color: var(--clr-primary-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+
+    &-link {
+      margin-right: 1rem;
+    }
+  }
+
+  &__logo {
+    margin-left: 3rem;
+  }
+
+  &__search-login {
+    display: flex;
+    margin-right: 2rem;
+
+    p {
+      margin-right: 1rem;
+    }
+  }
+}
