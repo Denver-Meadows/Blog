@@ -10,7 +10,7 @@
     align-items: center;
     height: 5rem;
     background-color: var(--clr-primary-bg);
-    border-bottom: 1px lightgray solid;
+    border-bottom: 1px var(--clr-border-color) solid;
 
     &__logo {
       font-family: "Dancing Script";
@@ -36,7 +36,7 @@
     align-items: center;
     height: 3.5rem;
     background-color: var(--clr-primary-bg);
-    border-bottom: 1px lightgray solid;
+    border-bottom: 1px var(--clr-border-color) solid;
 
     &__list {
       display: flex;
@@ -48,48 +48,16 @@
       &-link {
         padding: 0.4rem 6rem;
         height: 100%;
-        border-right: 1px solid lightgray;
+        border-right: 1px solid var(--clr-border-color);
 
         &:last-child {
           border-right: none;
         }
 
         &:hover {
-          border-bottom: 3px solid red;
+          border-bottom: 3px solid var(--clr-active-border-color);
         }
       }
     }
   }
 }
-
-// .nav {
-//   font-size: 2rem;
-//   background-color: var(--clr-primary-bg);
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   height: 7rem;
-
-//   &__list {
-//     display: flex;
-//     list-style: none;
-//     cursor: pointer;
-
-//     &-link {
-//       margin-right: 1rem;
-//     }
-//   }
-
-//   &__logo {
-//     margin-left: 3rem;
-//   }
-
-//   &__search-login {
-//     display: flex;
-//     margin-right: 2rem;
-
-//     p {
-//       margin-right: 1rem;
-//     }
-//   }
-// }
