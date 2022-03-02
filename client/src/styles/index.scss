@@ -1,3 +1,6 @@
+// @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono:wght@100;200;300;400&display=swap");
+
 :root {
   // primary background
   --clr-primary-bg: rgb(255, 251, 251);
@@ -44,8 +47,8 @@ html {
 }
 
 body {
-  font-family: Lato, "Open Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto Mono";
+  font-weight: 300;
   font-size: 1.6rem;
   background-color: var(--clr-primary-1);
 }
