@@ -34,14 +34,30 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 3rem;
+    height: 3.5rem;
     background-color: var(--clr-primary-bg);
     border-bottom: 1px lightgray solid;
 
     &__list {
       display: flex;
+      align-items: center;
       list-style: none;
       cursor: pointer;
+      // height: 100%;
+
+      &-link {
+        padding: 0.4rem 6rem;
+        height: 100%;
+        border-right: 1px solid lightgray;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        &:hover {
+          border-bottom: 3px solid red;
+        }
+      }
     }
   }
 }
