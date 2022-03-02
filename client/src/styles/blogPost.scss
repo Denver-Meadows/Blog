@@ -1,0 +1,29 @@
+.article {
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  width: 75rem;
+  background-color: var(--clr-primary-bg);
+  padding: 3rem;
+  border: 1px gray solid;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+
+  &__headline {
+    margin-bottom: 1rem;
+  }
+
+  &__category {
+    margin-bottom: 2rem;
+  }
+
+  &__image {
+    margin-bottom: 2rem;
+    width: 75rem;
+  }
+
+  &__details {
+    margin-bottom: 2rem;
+  }
+}

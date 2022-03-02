@@ -19,7 +19,7 @@ const navbar = () => {
         <ul className="nav__bottom__list">
           <li className="nav__bottom__list-link">Coding</li>
           <li className="nav__bottom__list-link">Reading</li>
-          <li className="nav__bottom__list-link">Runnning</li>
+          <li className="nav__bottom__list-link">Running</li>
           <li className="nav__bottom__list-link">About</li>
         </ul>
       </div>
