@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/navbar.scss";
 import { BiUserCircle, BiSearch } from "react-icons/bi";
+import SearchBar from "./SearchBar";
 
 const navbar = () => {
   return (
@@ -10,12 +11,8 @@ const navbar = () => {
           <p>Denver Meadows</p>
         </div>
         <div className="nav__top__search-login">
-          <p>
-            <BiUserCircle />
-          </p>
-          <p>
-            <BiSearch />
-          </p>
+          <SearchBar />
+          <BiUserCircle className="nav__top-login" />
         </div>
       </div>
       <div className="nav__bottom">

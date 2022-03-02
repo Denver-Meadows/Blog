@@ -8,18 +8,25 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 4rem;
-    background-color: lightgray;
-    border-bottom: 1px blue solid;
+    height: 5rem;
+    background-color: var(--clr-primary-bg);
+    border-bottom: 1px lightgray solid;
 
     &__logo {
       font-family: "Dancing Script";
       font-size: 3rem;
+      cursor: pointer;
     }
 
     &__search-login {
       display: flex;
+      align-items: center;
+    }
+
+    &-login {
+      margin-left: 2rem;
       font-size: 2.5rem;
+      cursor: pointer;
     }
   }
 
@@ -28,8 +35,8 @@
     justify-content: space-around;
     align-items: center;
     height: 3rem;
-    background-color: grey;
-    border-bottom: 1px blue solid;
+    background-color: var(--clr-primary-bg);
+    border-bottom: 1px lightgray solid;
 
     &__list {
       display: flex;
