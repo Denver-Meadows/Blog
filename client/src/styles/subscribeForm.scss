@@ -1,0 +1,40 @@
+.subscribe {
+  margin-top: 5rem;
+
+  &__headline {
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+
+  &__details {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  &__form {
+    &__name {
+      border: 1px solid grey;
+      padding: 1rem;
+      width: 15rem;
+      margin-right: 1rem;
+      border-radius: 3px;
+    }
+
+    &__email {
+      border: 1px solid grey;
+      padding: 1rem;
+      width: 30rem;
+      margin-right: 1rem;
+      border-radius: 3px;
+    }
+
+    &__btn {
+      padding: 1rem;
+      width: 15rem;
+      color: var(--clr-primary-bg);
+      background-color: var(--clr-main-body);
+      border: none;
+      border-radius: 3px;
+    }
+  }
+}

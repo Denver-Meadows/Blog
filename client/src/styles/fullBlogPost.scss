@@ -1,0 +1,31 @@
+.full-blog-post__article {
+  margin: 0 auto;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  width: 85rem;
+  background-color: var(--clr-primary-bg);
+  padding: 3rem;
+  border: 1px gray solid;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 5rem 5rem 15rem;
+
+  &__headline {
+    margin-bottom: 2rem;
+  }
+
+  &__category {
+    margin-bottom: 4rem;
+  }
+
+  &__image {
+    margin-bottom: 2rem;
+    width: 85%;
+    height: 45rem;
+  }
+
+  &__details {
+    margin-bottom: 2rem;
+    margin-right: 10rem;
+  }
+}
