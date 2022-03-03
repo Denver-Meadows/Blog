@@ -8,11 +8,16 @@
   border: 1px gray solid;
   display: flex;
   flex-direction: column;
-  padding: 7rem 4rem 4rem 14rem;
+  padding: 6rem 2rem 4rem 14rem;
   border-radius: 5px;
 
   &__headline {
+    margin-bottom: 0.5rem;
+  }
+
+  &__date {
     margin-bottom: 2rem;
+    font-weight: 400;
   }
 
   &__category {
@@ -26,7 +31,18 @@
   }
 
   &__details {
-    margin-bottom: 2rem;
-    margin-right: 10rem;
+    margin-bottom: 4rem;
+    margin-right: 13rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid grey;
+  }
+
+  &__reply {
+    margin-right: 13rem;
+    padding-bottom: 3rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid grey;
   }
 }

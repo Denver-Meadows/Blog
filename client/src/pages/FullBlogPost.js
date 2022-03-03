@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/fullBlogPost.scss";
 import SubscribeForm from "../components/SubscribeForm";
 import ShareContent from "../components/ShareContent";
+import Comments from "../components/Comments";
 
 const FullBlogPost = () => {
   return (
@@ -9,6 +10,9 @@ const FullBlogPost = () => {
       <h2 className="full-blog-post__article__headline">
         Building Web Applications with React
       </h2>
+      <div className="full-blog-post__article__date">
+        <p>March 2, 2022</p>
+      </div>
       <h5 className="full-blog-post__article__category">Coding</h5>
       <img
         className="full-blog-post__article__image"
@@ -38,14 +42,17 @@ const FullBlogPost = () => {
         optio praesentium consequatur voluptatem accusamus nihil perspiciatis
         architecto quis expedita culpa vitae!
       </p>
-      <div className="full-blog-post__article__date-comments">
-        <p>March 2, 2022</p>
+      <div className="full-blog-post__article__reply">
+        <h3>Leave a comment</h3>
       </div>
       <div className="full-blog-post__subscribe">
         <SubscribeForm />
       </div>
       <div className="full-blog-post__share">
         <ShareContent />
+      </div>
+      <div className="full-blog-post__comments">
+        <Comments />
       </div>
     </article>
   );

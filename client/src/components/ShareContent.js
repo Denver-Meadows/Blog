@@ -11,7 +11,7 @@ import { MdEmail } from "react-icons/md";
 const ShareContent = () => {
   return (
     <section className="share">
-      <h4 className="share__headline">Share this entry</h4>
+      <p className="share__headline">Share this post</p>
       <ul className="share__box">
         <li className="share__box__link share__box__link--facebook">
           <GrFacebookOption />
