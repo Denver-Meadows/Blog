@@ -4,6 +4,10 @@ import "../styles/blogPost.scss";
 // Photo by <a href="https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fotis Fotopoulos</a> on <a href="https://unsplash.com/s/photos/programming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 const BlogPost = () => {
+  const maxLength = 500;
+  const text =
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, ad, eiusquae possimus nulla accusamus impedit ex corporis facere suscipit odioquia. Error doloremque, pariatur, incidunt libero consectetur quasimolestias illo veniam eaque laboriosam esse culpa rerum cumque totamsimilique ratione. Nisi animi fuga quos odio perspiciatis, quo sapienteid ea vitae voluptatibus temporibus at facere quam dicta tempora enimmolestiae aliquam. In tempore dolores omnis explicabo. Aut aspernaturfacilis nesciunt nisi explicabo recusandae vel. Lorem ipsum dolor sitamet consectetur adipisicing elit. Amet molestiae distinctio dolorbeatae sit? Possimus molestiae voluptate itaque adipisci quam accusamusculpa exercitationem non excepturi, officia debitis aliquid providentamet dignissimos autem aperiam sapiente minus? Dolor minus debitisaccusamus ad laboriosam nesciunt unde sed ullam. Illo excepturi natuserror aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit repudiandae quaerat, ipsam optio praesentiumconsequatur voluptatem accusamus nihil perspiciatis architecto quisexpedita culpa vitae!";
+
   return (
     <article className="article">
       <h2 className="article__headline">
@@ -15,7 +19,15 @@ const BlogPost = () => {
         src="https://res.cloudinary.com/dfsqn3oi6/image/upload/v1646247667/blog/fotis-fotopoulos-DuHKoV44prg-unsplash_mh7xyo.jpg"
         alt=""
       />
-      <p className="article__details">
+      {text.length > maxLength ? (
+        <p className="article__details">
+          {`${text.substring(0, maxLength)}...`}
+          <a href="#">[Read more]</a>
+        </p>
+      ) : (
+        <p className="article__details">{text}</p>
+      )}
+      {/* <p className="article__details">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, ad, eius
         quae possimus nulla accusamus impedit ex corporis facere suscipit odio
         quia. Error doloremque, pariatur, incidunt libero consectetur quasi
@@ -33,7 +45,7 @@ const BlogPost = () => {
         elit. Quasi fugit repudiandae quaerat, ipsam optio praesentium
         consequatur voluptatem accusamus nihil perspiciatis architecto quis
         expedita culpa vitae!
-      </p>
+      </p> */}
       <div className="article__date-comments">
         <p>March 2, 2022 | 11 Comments</p>
       </div>
