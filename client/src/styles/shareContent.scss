@@ -1,0 +1,52 @@
+.share {
+  &__headline {
+    margin-bottom: 2rem;
+  }
+
+  &__box {
+    display: flex;
+    list-style: none;
+
+    &__link {
+      padding: 1.5rem 6.1rem;
+      border-top: 1px solid var(--clr-main-body);
+      border-bottom: 1px solid var(--clr-main-body);
+      border-left: 1px solid var(--clr-main-body);
+      cursor: pointer;
+
+      &:last-child {
+        border-right: 1px solid var(--clr-main-body);
+      }
+
+      &:hover {
+        color: var(--clr-primary-bg);
+      }
+
+      &--facebook:hover {
+        background-color: #3b5998;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+      }
+      &--twitter:hover {
+        background-color: #00acee;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+      }
+      &--linkedin:hover {
+        background-color: #0e76a8;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+      }
+      &--reddit:hover {
+        background-color: #ff4500;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+      }
+      &--email:hover {
+        background-color: #69974e;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+      }
+    }
+  }
+}

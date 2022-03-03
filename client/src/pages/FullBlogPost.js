@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/fullBlogPost.scss";
 import SubscribeForm from "../components/SubscribeForm";
+import ShareContent from "../components/ShareContent";
 
 const FullBlogPost = () => {
   return (
@@ -42,6 +43,9 @@ const FullBlogPost = () => {
       </div>
       <div className="full-blog-post__subscribe">
         <SubscribeForm />
+      </div>
+      <div className="full-blog-post__share">
+        <ShareContent />
       </div>
     </article>
   );
