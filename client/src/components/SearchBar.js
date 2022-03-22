@@ -7,6 +7,7 @@ import "../styles/searchbar.scss";
 const SearchBar = () => {
   // const [searchInput, setSearchInput] = useState("");
 
+  // Ready for implementation
   // const handleChange = () => {
   //   console.log("handleChange");
   // };
