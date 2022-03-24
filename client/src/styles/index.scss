@@ -59,3 +59,20 @@ body {
   font-size: 1.6rem;
   background-color: var(--clr-main-body);
 }
+
+.submit-button {
+  padding: 1rem;
+  width: 16rem;
+  color: var(--clr-primary-bg);
+  background-color: var(--clr-main-body);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--clr-main-body-light);
+    // color: var(--clr-main-body);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+}

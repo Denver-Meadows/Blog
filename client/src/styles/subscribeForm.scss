@@ -1,5 +1,7 @@
 .subscribe {
   margin-top: 1rem;
+  width: 85%;
+  border-bottom: 1px solid grey;
 
   &__headline {
     font-weight: 400;
@@ -12,7 +14,7 @@
   }
 
   &__form {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     &__name {
       border: 1px solid grey;
