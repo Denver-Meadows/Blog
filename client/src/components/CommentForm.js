@@ -8,7 +8,7 @@ const CommentForm = () => {
         name="comment"
         id="comment"
         cols="35"
-        rows="3"
+        rows="4"
         placeholder="Enter your comment here..."
       ></textarea>
       <input type="text" name="name" id="name" placeholder="Name (required)" />

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/leave-comment.scss";
 import CommentFrom from "./CommentForm";
 
-const LeaveComment = () => {
+const SubmitComment = () => {
   return (
     <div className="leave-comment">
       <h3>Leave a comment</h3>
@@ -13,4 +13,4 @@ const LeaveComment = () => {
   );
 };
 
-export default LeaveComment;
+export default SubmitComment;
