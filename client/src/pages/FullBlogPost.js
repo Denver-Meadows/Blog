@@ -3,6 +3,7 @@ import "../styles/fullBlogPost.scss";
 import SubscribeForm from "../components/SubscribeForm";
 import ShareContent from "../components/ShareContent";
 import Comments from "../components/Comments";
+import LeaveAComment from "../components/LeaveComment";
 
 const FullBlogPost = () => {
   return (
@@ -43,7 +44,7 @@ const FullBlogPost = () => {
         architecto quis expedita culpa vitae!
       </p>
       <div className="full-blog-post__article__reply">
-        <h3>Leave a comment</h3>
+        <LeaveAComment />
       </div>
       <div className="full-blog-post__subscribe">
         <SubscribeForm />
