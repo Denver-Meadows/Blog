@@ -7,7 +7,7 @@ import Comments from "../components/Comments";
 const FullBlogPost = () => {
   return (
     <article className="full-blog-post__article">
-      <h2 className="full-blog-post__article__headline">
+      <h2 className="full-blog-post__article__title">
         Building Web Applications with React
       </h2>
       <div className="full-blog-post__article__date">

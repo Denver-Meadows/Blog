@@ -10,9 +10,7 @@ const BlogPost = () => {
 
   return (
     <article className="article">
-      <h2 className="article__headline">
-        Building Web Applications with React
-      </h2>
+      <h2 className="article__title">Building Web Applications with React</h2>
       <h5 className="article__category">Coding</h5>
       <img
         className="article__image"
@@ -22,7 +20,7 @@ const BlogPost = () => {
       {text.length > maxLength ? (
         <p className="article__details">
           {`${text.substring(0, maxLength)}...`}
-          <a href="#">[Read more]</a>
+          <button className="article__details__btn">[ Read more ]</button>
         </p>
       ) : (
         <p className="article__details">{text}</p>

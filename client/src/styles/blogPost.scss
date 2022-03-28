@@ -11,7 +11,7 @@
   padding: 5rem;
   border-radius: 5px;
 
-  &__headline {
+  &__title {
     margin-bottom: 1rem;
   }
 
@@ -27,5 +27,12 @@
 
   &__details {
     margin-bottom: 2rem;
+
+    &__btn {
+      border: none;
+      background-color: transparent;
+      color: blue;
+      cursor: pointer;
+    }
   }
 }
