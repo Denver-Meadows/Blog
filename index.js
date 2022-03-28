@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const port = process.env.PORT || 3001;
 
-// connecting mongo with mongoose
+// connecting mongo with mongoose *no longer need to pass in options like with inventory and camp-review apps
 const dbURL = process.env.DB_URL || "mongodb://localhost:27017/blog";
 mongoose
   .connect(dbURL)

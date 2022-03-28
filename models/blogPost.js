@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const BlogPostSchema = new mongoose.Schema({
-  headline: {
+  title: {
     type: String,
     required: true,
   },
@@ -11,22 +11,26 @@ const BlogPostSchema = new mongoose.Schema({
   },
   image: {
     url: String,
-    required: true,
   },
   content: {
     body: String,
-    required: true,
   },
   date: {
     type: Date,
-    default: Date.now,
+    default: Date.now(),
   },
   comments: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Comment",
+      type: String,
     },
   ],
 });
+
+// comments: [
+//   {
+//     type: mongoose.Schema.Types.ObjectId,
+//     ref: "Comment",
+//   },
+// ],
 
 module.exports = mongoose.model("BlogPost", BlogPostSchema);
